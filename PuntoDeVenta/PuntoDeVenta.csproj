@@ -44,6 +44,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArticulosActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArticulosActualizar.Designer.cs">
+      <DependentUpon>ArticulosActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArticulosAlta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArticulosAlta.Designer.cs">
+      <DependentUpon>ArticulosAlta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArticulosEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArticulosEliminar.Designer.cs">
+      <DependentUpon>ArticulosEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesActualizar.Designer.cs">
+      <DependentUpon>ClientesActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesAlta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesAlta.Designer.cs">
+      <DependentUpon>ClientesAlta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesEliminar.Designer.cs">
+      <DependentUpon>ClientesEliminar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +94,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedorActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorActualizar.Designer.cs">
+      <DependentUpon>ProveedorActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedorAlta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorAlta.Designer.cs">
+      <DependentUpon>ProveedorAlta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedorEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorEliminar.Designer.cs">
+      <DependentUpon>ProveedorEliminar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ArticulosActualizar.resx">
+      <DependentUpon>ArticulosActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArticulosAlta.resx">
+      <DependentUpon>ArticulosAlta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArticulosEliminar.resx">
+      <DependentUpon>ArticulosEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientesActualizar.resx">
+      <DependentUpon>ClientesActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientesAlta.resx">
+      <DependentUpon>ClientesAlta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientesEliminar.resx">
+      <DependentUpon>ClientesEliminar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -73,6 +145,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ProveedorActualizar.resx">
+      <DependentUpon>ProveedorActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedorAlta.resx">
+      <DependentUpon>ProveedorAlta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedorEliminar.resx">
+      <DependentUpon>ProveedorEliminar.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
