@@ -18,11 +18,12 @@ namespace PuntoDeVenta
 {
     public partial class Login : Form
     {
-        SqlConnection VENTAS;
+        public SqlConnection VENTAS;
         SqlCommand cmd;
         SqlDataReader dr;
         public String userType;
         public int userId;
+        String connectionString;
         public Login()
         {
             InitializeComponent();
@@ -30,16 +31,19 @@ namespace PuntoDeVenta
 
         private void Login_Load(object sender, EventArgs e)
         {
-            String connectionString = ConfigurationManager.ConnectionStrings["VENTAS"].ConnectionString;
-            VENTAS = new SqlConnection(connectionString);
+
             try {
-                VENTAS.Close();
-                VENTAS.Open();
+                declararConexiones();
+                abrirConexionVentas();
                 MessageBox.Show("Conexion Abiarta");
             }
             catch (Exception ex) {
-                MessageBox.Show("Error al abrir la conexion");
+                MessageBox.Show("Error al abrir la conexion"+ex.ToString());
             }
+        }
+        public void declararConexiones() {
+            connectionString = ConfigurationManager.ConnectionStrings["VENTAS"].ConnectionString;
+            VENTAS = new SqlConnection(connectionString);
         }
 
         public void abrirConexionVentas() {

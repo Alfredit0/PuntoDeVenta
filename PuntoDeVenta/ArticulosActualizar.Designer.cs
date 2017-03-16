@@ -34,7 +34,7 @@
             this.textCosto = new System.Windows.Forms.TextBox();
             this.textPrecioV = new System.Windows.Forms.TextBox();
             this.textCodigoAlt = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBuscar = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.textCodigo = new System.Windows.Forms.Label();
@@ -91,12 +91,12 @@
             this.textCodigoAlt.Size = new System.Drawing.Size(186, 20);
             this.textCodigoAlt.TabIndex = 1;
             // 
-            // textBox1
+            // textBuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(339, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBuscar.Location = new System.Drawing.Point(339, 53);
+            this.textBuscar.Name = "textBuscar";
+            this.textBuscar.Size = new System.Drawing.Size(186, 20);
+            this.textBuscar.TabIndex = 0;
             // 
             // button2
             // 
@@ -106,6 +106,7 @@
             this.button2.TabIndex = 24;
             this.button2.Text = "SALIR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnActualizar
             // 
@@ -194,6 +195,7 @@
             this.btnBuscar.TabIndex = 25;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // ArticulosActualizar
             // 
@@ -207,7 +209,7 @@
             this.Controls.Add(this.textCosto);
             this.Controls.Add(this.textPrecioV);
             this.Controls.Add(this.textCodigoAlt);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBuscar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.textCodigo);
@@ -232,7 +234,7 @@
         private System.Windows.Forms.TextBox textCosto;
         private System.Windows.Forms.TextBox textPrecioV;
         private System.Windows.Forms.TextBox textCodigoAlt;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBuscar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Label textCodigo;
